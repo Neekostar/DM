@@ -181,4 +181,4 @@ while not exit:
         case other:
             print('Неверная команда!')
     os.system('pause')
-    os.system('cls')
+    os.system('clear')
