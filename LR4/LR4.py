@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import networkx as nx
+import warnings
 
 def convert_adjacency_list_to_adjacency_matrix(adjacency_list: np.ndarray):
     count_of_vertices = len(adjacency_list)
@@ -171,6 +172,7 @@ def personal_task():
             node_color='b')
     plt.show()
 
+warnings.filterwarnings('ignore')
 menu = ' 1. Задать первый граф в виде списка смежности\n' \
        ' 2. Задать первый граф в виде матрицы смежности\n' \
        ' 3. Задать первый граф в виде матрицы инцидентности\n' \
